@@ -11,11 +11,11 @@ import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 
-import de.hdodenhof.circleimageview.CircleImageView;
 import lecttarjetas.com.dialogs.R;
 
 public class CustomAlert {
@@ -71,7 +71,7 @@ public class CustomAlert {
         ((TextView)view.findViewById(R.id.text)).setText(text);
         ((Button)view.findViewById(R.id.buttOne)).setText(textOneButton);
         view.findViewById(R.id.circleView).setBackgroundDrawable(contexto.getResources().getDrawable(R.drawable.circle_warning));
-        ((CircleImageView) view.findViewById(R.id.circleView)).setImageDrawable(contexto.getResources().getDrawable(R.drawable.ic_priority_high_white_24dp));
+        ((ImageView) view.findViewById(R.id.circleView)).setImageDrawable(contexto.getResources().getDrawable(R.drawable.ic_priority_high_white_24dp));
     }
     public void setTypeError(String title, String text, String textButtonLeft, String textButtonRight ){
         view.findViewById(R.id.buttonLeft).setVisibility(View.VISIBLE);
@@ -82,7 +82,7 @@ public class CustomAlert {
         ((Button)view.findViewById(R.id.buttonLeft)).setText(textButtonLeft);
         ((Button)view.findViewById(R.id.buttonRight)).setText(textButtonRight);
         view.findViewById(R.id.circleView).setBackgroundDrawable(contexto.getResources().getDrawable(R.drawable.circle_error));
-        ((CircleImageView) view.findViewById(R.id.circleView)).setImageDrawable(contexto.getResources().getDrawable(R.drawable.ic_close_white_24dp));
+        ((ImageView) view.findViewById(R.id.circleView)).setImageDrawable(contexto.getResources().getDrawable(R.drawable.ic_close_white_24dp));
     }
     public void setTypeSuccess(String title, String text , String textOneButton) {
         view.findViewById(R.id.buttonLeft).setVisibility(View.GONE);
@@ -91,7 +91,7 @@ public class CustomAlert {
         ((TextView)view.findViewById(R.id.text)).setText(text);
         ((Button) view.findViewById(R.id.buttOne)).setText(textOneButton);
         view.findViewById(R.id.circleView).setBackgroundDrawable(contexto.getResources().getDrawable(R.drawable.circle_success));
-        ((CircleImageView) view.findViewById(R.id.circleView)).setImageDrawable(contexto.getResources().getDrawable(R.drawable.ic_done_white_24dp));
+        ((ImageView) view.findViewById(R.id.circleView)).setImageDrawable(contexto.getResources().getDrawable(R.drawable.ic_done_white_24dp));
     }
     public void setTypeCustom(Drawable icon, String title, String text, String textButtonLeft, String textButtonRight ){
         view.findViewById(R.id.buttonLeft).setVisibility(View.VISIBLE);
@@ -102,7 +102,7 @@ public class CustomAlert {
         ((Button)view.findViewById(R.id.buttonLeft)).setText(textButtonLeft);
         ((Button)view.findViewById(R.id.buttonRight)).setText(textButtonRight);
         view.findViewById(R.id.circleView).setBackgroundDrawable(contexto.getResources().getDrawable(R.drawable.circle));
-        ((CircleImageView) view.findViewById(R.id.circleView)).setImageDrawable(icon);
+        ((ImageView) view.findViewById(R.id.circleView)).setImageDrawable(icon);
     }
     public void setTypeProgress(String title, String text, String textOneButton){
         view.findViewById(R.id.buttonLeft).setVisibility(View.GONE);
@@ -122,7 +122,7 @@ public class CustomAlert {
         ((Button) view.findViewById(R.id.ButtonRightUpView)).setText(textButtonRightUpView);
 
         view.findViewById(R.id.circleView).setBackgroundDrawable(contexto.getResources().getDrawable(R.drawable.circle));
-        ((CircleImageView) view.findViewById(R.id.circleView)).setImageDrawable(contexto.getResources().getDrawable(R.drawable.ic_person_white_36dp));
+        ((ImageView) view.findViewById(R.id.circleView)).setImageDrawable(contexto.getResources().getDrawable(R.drawable.ic_person_white_36dp));
 
     }
     public void setTypeThreeButtons(String textButtonLeftUpView, String textButtonRightUpView, String textButtonLeftDownView){
@@ -134,7 +134,7 @@ public class CustomAlert {
         ((Button) view.findViewById(R.id.OneButton)).setText(textButtonLeftDownView);
 
         view.findViewById(R.id.circleView).setBackgroundDrawable(contexto.getResources().getDrawable(R.drawable.circle));
-        ((CircleImageView) view.findViewById(R.id.circleView)).setImageDrawable(contexto.getResources().getDrawable(R.drawable.ic_person_white_36dp));
+        ((ImageView) view.findViewById(R.id.circleView)).setImageDrawable(contexto.getResources().getDrawable(R.drawable.ic_person_white_36dp));
 
     }
     public void show(){

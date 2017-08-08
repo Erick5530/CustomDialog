@@ -1,49 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/transparente"
-    android:orientation="vertical">
+    android:background="@color/transparente">
     <Button
+        android:layout_margin="10dp"
         android:id="@+id/succes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="success"/>
+        android:text="success"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/esquinas_redondeadas_botones"/>
     <Button
+        android:layout_below="@+id/succes"
+        android:layout_margin="10dp"
         android:id="@+id/error"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/esquinas_redondeadas_botones"
         android:text="error"/>
     <Button
+        android:layout_below="@+id/error"
+        android:layout_margin="10dp"
         android:id="@+id/warning"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/esquinas_redondeadas_botones"
         android:text="warning"/>
     <Button
+        android:layout_below="@+id/warning"
+        android:layout_margin="10dp"
         android:id="@+id/progress"
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/esquinas_redondeadas_botones"
         android:text="progress"/>
     <Button
         android:id="@+id/custom"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="@drawable/esquinas_redondeadas_botones"
         android:text="custom"/>
     <Button
-        android:id="@+id/InfoGeneral"
+        android:id="@+id/Normal"
+        android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/esquinas_redondeadas_botones"
+        android:text="Normal"
+        android:layout_below="@+id/custom"/>
+    <Button
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Normal"
+        android:id="@+id/InfoGeneral"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/esquinas_redondeadas_botones"
         android:text="Info. General"/>
     <Button
-        android:id="@+id/Normal"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Normal"
+        android:id="@+id/ProgressBar"
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Normal"/>
-    <Button
-        android:id="@+id/Progreso"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Progreso"/>
+        android:textColor="@color/white"
+        android:background="@drawable/esquinas_redondeadas_botones"
+        android:text="Barras de Progreso"/>
 
-</LinearLayout>
+
+
+</RelativeLayout>

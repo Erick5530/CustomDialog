@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         custom = (Button)findViewById(R.id.custom);
         InfoGeneral = (Button)findViewById(R.id.InfoGeneral);
         normal = (Button)findViewById(R.id.Normal);
-        barras = (Button)findViewById(R.id.Progreso);
+        barras = (Button)findViewById(R.id.ProgressBar);
 
 
 
@@ -95,19 +95,7 @@ public class MainActivity extends AppCompatActivity {
 
                 LinearLayout contenedor = (LinearLayout) alert.getView().findViewById(R.id.Content);
                 LayoutInflater inflater = LayoutInflater.from(v.getContext());
-                View view = inflater.inflate(R.layout.info, contenedor, true);
-                (view.findViewById(R.id.boton_1)).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        System.out.println("====================================================");
-                    }
-                });
-                alert.getButtonLeft(CustomAlert._INFO_VIEW).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        System.out.println("Hola que hace Info_General =============================");
-                    }
-                });
+                View view = inflater.inflate(R.layout.layout_info, contenedor, true);
                 alert.show();
 
             }
@@ -119,13 +107,8 @@ public class MainActivity extends AppCompatActivity {
                 alert.setTypeTwoButtons("Aceptar", "Cancelar");
                 LinearLayout contenedor = (LinearLayout) alert.getView().findViewById(R.id.Content);
                 LayoutInflater inflater = LayoutInflater.from(v.getContext());
-                View view = inflater.inflate(R.layout.info, contenedor, true);
-                (view.findViewById(R.id.boton_1)).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        System.out.println("====================================================");
-                    }
-                });
+                View view = inflater.inflate(R.layout.layout_info, contenedor, true);
+
 
                 alert.show();
 

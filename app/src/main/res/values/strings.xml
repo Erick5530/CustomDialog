@@ -1,3 +1,191 @@
 <resources>
     <string name="app_name">Dialogs</string>
+    <!-- Login -->
+    <string name="logo">logo</string>
+    <string name="welcome">BIENVENIDO</string>
+    <string name="user">USUARIO</string>
+    <string name="prompt_user">Usuario</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="sign_in">ENTRAR</string>
+    <string name="sign_out">cerrar sesión</string>
+    <string name="title_activity_bim">BIM</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_session">Sesión</string>
+    <string name="home">Inicio</string>
+    <string name="work">Trabajar</string>
+    <string name="sync_up">Sincronizar</string>
+    <string name="diary">Agenda</string>
+    <string name="routes">Rutas</string>
+    <string name="view_connection">Ver conexión</string>
+
+    <string name="cuentas">CUENTAS</string>
+    <string name="state">ESTADO</string>
+    <string name="municipality">CIUDAD</string>
+    <string name="colony">COLONIA</string>
+    <string name="to_list">Listar</string>
+
+    <string name="name">NOMBRE</string>
+    <string name="credito">CREDITO</string>
+
+    <!-- COMPANY -->
+    <string name="info_gral">Información General</string>
+    <string name="bim">BIM</string>
+    <string name="Producto">Producto</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Direccion">Dirección</string>
+    <string name="Colonia">Colonia</string>
+    <string name="Ciudad">Ciudad</string>
+    <string name="Estado">Estado</string>
+    <string name="Delegacion">Delegación</string>
+    <string name="CP">CP</string>
+
+    <string name="telefonos">Telefonos</string>
+    <string name="Casa">Casa</string>
+    <string name="Empleo">Empleo</string>
+    <string name="Otro">Otro</string>
+
+    <string name="info_fin">Información financiera</string>
+    <string name="Denominacion">Denominacion</string>
+    <string name="Gastos_de_cobranza">Gastos de cobranza</string>
+    <string name="Mora_inicio_mes">Mora inicio mes</string>
+    <string name="Mensualidad_vigente">Mensualidad vigente</string>
+    <string name="Total_exigible">Total exigible</string>
+    <string name="Saldo_a_liquidar">Saldo a liquidar</string>
+    <string name="Cuenta_Recepcion_pagos">Cuenta Recepción de pagos</string>
+    <string name="Referencia_de_pago">Referencia de pago</string>
+    <string name="Mora_actual">Mora actual</string>
+    <string name="Monto_ult_pago">Monto ult. pago</string>
+    <string name="Fecha_ult_pago">Fecha ult. pago</string>
+    <string name="Saldo_contable">Saldo contable</string>
+
+    <!-- CONDESA -->
+    <string name="condesa">Condesa</string>
+    <string name="Acreditado">Acreditado</string>
+    <string name="CURP">CURP</string>
+    <string name="Email">Email</string>
+    <string name="dir_anterior">Dirección anterior</string>
+
+    <string name="Pagos_atraso">Pagos atraso</string>
+    <string name="Saldo_apertura">Saldo apertura</string>
+    <string name="Capital">Capital</string>
+    <string name="Seguros">Seguros</string>
+    <string name="Gastos_cobranza">Gastos cobranza</string>
+    <string name="Mensualidad">Mensualidad</string>
+    <string name="Credito_inicial">Crédito inicial</string>
+
+    <string name="Valor_gara">Valor Garantia</string>
+
+    <string name="Estatus">Estatus</string>
+    <string name="Saldo_insoluto">Saldo insoluto de capital</string>
+    <string name="Interes">Interés</string>
+    <string name="Comisiones">Comisiones</string>
+    <string name="TotalACobrar">Total a cobrar vencida + vigente</string>
+    <string name="SaldoXaplicar">Saldo x aplicar</string>
+    <string name="TotalACobrarMes">Total a cobrar en el mes</string>
+
+    <!-- Finpatria -->
+    <string name="finpatria">Finpatria</string>
+    <string name="Calle">Calle</string>
+    <string name="noExt">Num. Ext.</string>
+    <string name="noInt">Num. Int</string>
+    <string name="Municipio">Municipio</string>
+
+    <string name="Saldo_insoluto_mon">Saldo insoluto moneda origen</string>
+    <string name="Num_Cuota">Num. Cuota</string>
+    <string name="Intereses">Intereses</string>
+    <string name="Swap">Swap</string>
+    <string name="Saldo_insoluto_pesos">Saldo insoluto pesos</string>
+    <string name="Pagos_vencidos">Pagos vencidos</string>
+    <string name="Com_Admin">Com Admin</string>
+    <string name="Gastos">Gastos</string>
+    <string name="Total">Total</string>
+    <string name="Ints">Inst. Exigib </string>
+    <string name="Seg.Vida">Seg. Vida</string>
+    <string name="Seg.Daño">Seg. Daño</string>
+    <string name="Cobertura">Cobertura</string>
+    <string name="ComSFol">ComSFol</string>
+    <string name="Moratorios">Moratorios</string>
+    <string name="NuevaMensualidad">Nueva Mensualidad</string>
+
+    <!-- CORPORACION -->
+    <string name="company">Corporación</string>
+    <string name="direcc_emple">Dirección Empleo</string>
+    <string name="DireccionAnterior">Dirección Anterior</string>
+
+    <!-- SHF -->
+    <string name="CreditoInicial">Crédito Inicial</string>
+    <string name="SHF">SHF</string>
+    <string name="NoCreditoSHF"> No. Crédito SHF</string>
+    <string name="PagosVencidos">Pagos Vencidos</string>
+    <string name="SaldoInsoluto_Long">Saldo insoluto de capital a la apertura mes anterior</string>
+    <string name="SaldoInsolutoCap">Saldo insoluto de capital</string>
+    <string name="SaldoUDIS">Saldo insoluto de capital UDIS</string>
+    <string name="Credito">Crédito</string>
+
+    <!-- TRABAJAR -->
+    <string name="photos">Fotos: 0</string>
+    <string name="relationship">Parentesco</string>
+    <string name="name_parentesco">Nombre</string>
+    <string name="accion">Acción</string>
+    <string name="answer">Resultados</string>
+    <string name="monto">Monto</string>
+    <string name="fecha_pago">FECHA PAGO</string>
+    <string name="causes">Causas no pago</string>
+    <string name="comments">Comentario</string>
+    <string name="save">GUARDAR</string>
+
+    <!-- INFORMACION ADICIONAL -->
+    <string name="info_adicional">Información Adicional</string>
+    <string name="add_telefono">Agregar teléfono</string>
+    <string name="add_address">Agregar dirección</string>
+    <string name="add_email">Agregar correo</string>
+    <string name="tipo">Tipo</string>
+    <string name="lada">Lada</string>
+    <string name="telefono">Teléfono</string>
+    <string name="extension">Ext.</string>
+    <string name="horario">Horario</string>
+    <string name="hora1">7:00</string>
+    <string name="hora2">20:00</string>
+    <string name="dias_contacto">Días de contacto</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="estado">Estado</string>
+    <string name="municipio">Delegación o Municipio</string>
+    <string name="calle">Calle</string>
+    <string name="colonia">Colonia</string>
+    <string name="numero_interior">Número interior</string>
+    <string name="numero_exterior">Número exterior</string>
+    <string name="email">Correo</string>
+    <string name="a">a</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="cancelar">Cancelar</string>
+
+    <!-- SINCRONIZAR -->
+    <string name="informacion_gestor">GESTOR</string>
+    <string name="usuario_gestor">USUARIO</string>
+    <string name="parentesco">PARENTESCO</string>
+    <string name="cod_accion">COD_AC</string>
+    <string name="des_accion">DES_AC</string>
+    <string name="respuesta">RESPUESTA</string>
+    <string name="cod_respuesta">COD_RES</string>
+    <string name="des_respuesta">DES_RES</string>
+    <string name="monto_res">MONTO</string>
+    <string name="causas">CAUSAS DE NO PAGO</string>
+    <string name="cod_causas">COD_CAUSAS</string>
+    <string name="des_causas">DES_CAUSAS</string>
+    <string name="latitud">LATITUD</string>
+    <string name="longitud">LONGITUD</string>
+    <string name="fecha_visita">VISITA</string>
+    <string name="id">ID</string>
+    <string name="fotos">FOTOS</string>
+    <string name="informacion">INFORMACIÓN PRINCIPAL</string>
+    <string name="comentario">COMENTARIO</string>
+
+    <!-- RUTEO -->
+    <string name="to_rute">Ruta</string>
+    <string name="driving">Auto</string>
+    <string name="walking">Caminar</string>
 </resources>
