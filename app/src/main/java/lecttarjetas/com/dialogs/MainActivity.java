@@ -1,31 +1,24 @@
 package lecttarjetas.com.dialogs;
 
-import android.app.Dialog;
-import android.content.DialogInterface;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-
-import com.yarolegovich.lovelydialog.LovelyInfoDialog;
-import com.yarolegovich.lovelydialog.LovelyProgressDialog;
-
-import org.xmlpull.v1.XmlPullParser;
+import android.widget.ProgressBar;
 
 import lecttarjetas.com.dialogs.Class.CustomAlert;
-import lecttarjetas.com.dialogs.Class.ImageConverter;
 
 public class MainActivity extends AppCompatActivity {
-    private Button success,warning,error, progress, custom, normal,InfoGeneral;
+
+    //Borrar esta variable de prueba********
+    ProgressBar barra1;
+    public static CountDownTimer contador;
+    int progreso;
+
+    private Button success,warning,error, progress, custom, normal,InfoGeneral, barras;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         custom = (Button)findViewById(R.id.custom);
         InfoGeneral = (Button)findViewById(R.id.InfoGeneral);
         normal = (Button)findViewById(R.id.Normal);
+        barras = (Button)findViewById(R.id.Progreso);
+
 
 
 
@@ -48,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
                 CustomAlert alert = new CustomAlert(v.getContext());
                 alert.setTypeSuccess("Hecho", "La operacion se realizo correctamente","Aceptar");
                 alert.show();
-
             }
         });
         warning.setOnClickListener(new View.OnClickListener() {
@@ -138,12 +132,38 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        barras.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alertaBarras();
 
+            }
+        });
 
+    }
 
+    void alertaBarras(){
 
+        //TODO: Hilo de ejemplo para poder ver el progreso de la barra
+        contador = new CountDownTimer(5000, 10) {
+            @Override
+            public void onTick(long l) {
+                progreso++;
+                barra1.setProgress(progreso*100/(5000/10));
+            }
 
-
-
+            @Override
+            public void onFinish() {
+                barra1.setProgress(100);
+            }
+        };
+        CustomAlert alert = new CustomAlert(this,CustomAlert._WHIT_VIEW);
+        alert.setTypeTwoButtons("Aceptar", "Cancelar");
+        LinearLayout contenedor = (LinearLayout) alert.getView().findViewById(R.id.Content);
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View view = inflater.inflate(R.layout.alert_info_progress_data, contenedor, true);
+        barra1 =(ProgressBar)view.findViewById(R.id.progressBarDatos);
+        alert.show();
+        contador.start();
     }
 }

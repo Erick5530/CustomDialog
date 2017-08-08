@@ -10,9 +10,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:text="@string/alert_info_datos"
-        android:layout_marginLeft="@dimen/layout_margin_10dp"
-        android:layout_marginTop="@dimen/layout_margin_10dp"
+        android:text="Datos"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         />
     <LinearLayout
         android:id="@+id/linearDatos"
@@ -25,8 +25,8 @@
         android:layout_height="wrap_content"
         style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_gravity="center"
-        android:paddingLeft="@dimen/layout_margin_10dp"
-        android:paddingRight="@dimen/layout_margin_10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_weight="20"
         />
         <TextView
@@ -35,16 +35,16 @@
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:layout_weight="1"
-            android:text="@string/progreso_datos"/>
+            android:text="10/10"/>
     </LinearLayout>
     <TextView
         android:id="@+id/lblImagenes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/alert_info_imagenes"
+        android:text="Imagenes"
         android:textSize="18sp"
-        android:layout_marginLeft="@dimen/layout_margin_10dp"
-        android:layout_marginTop="@dimen/layout_margin_10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         />
     <LinearLayout
         android:id="@+id/linearImagenes"
@@ -57,8 +57,8 @@
             android:layout_height="wrap_content"
             style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_gravity="center"
-            android:paddingLeft="@dimen/layout_margin_10dp"
-            android:paddingRight="@dimen/layout_margin_10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:layout_weight="20"
             />
         <TextView
@@ -67,16 +67,16 @@
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:layout_weight="1"
-            android:text="@string/progreso_datos"/>
+            android:text="10/10"/>
     </LinearLayout>
     <TextView
         android:id="@+id/lblAdicional"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/alert_info_adicional"
+        android:text="Adicionales"
         android:textSize="18sp"
-        android:layout_marginLeft="@dimen/layout_margin_10dp"
-        android:layout_marginTop="@dimen/layout_margin_10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         />
     <LinearLayout
         android:id="@+id/linearAdicional"
@@ -89,8 +89,8 @@
             android:layout_height="wrap_content"
             style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_gravity="center"
-            android:paddingLeft="@dimen/layout_margin_10dp"
-            android:paddingRight="@dimen/layout_margin_10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:layout_weight="20"
             />
         <TextView
@@ -99,7 +99,7 @@
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:layout_weight="1"
-            android:text="@string/progreso_datos"/>
+            android:text="10/10"/>
     </LinearLayout>
 
 </LinearLayout>
